@@ -1,33 +1,66 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <nav id="home">
+          <a href="#home">Home</a>
+
+          <a href="#profile">Profile</a>
+
+          <a href="#work">Work</a>
+
+          <a href="#services">Services</a>
+
+          <a href="#resume">Resume</a>
+
+          <a href="#blog">Blog</a>
+
+          <a href="#connect">Connect</a>
+        </nav>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      
+      <div>
+        hero
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+
+      <main className='container mx-auto px-44'>
+        <section>
+          <h1>Chico Freitas</h1>
+          <h2>Senior FullStack Developer</h2>
+
+          <div className='flex flex-row'>
+            <div className='mr-5'>
+              <img src="https://picsum.photos/300/300" alt="my photo" />
+            </div>
+
+            <div className='ml-5'>
+              <h1>Skills</h1>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>My Portfolio</h1>
+          <h2></h2>
+        </section>
+
+        <section>
+          <h1>Services</h1>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+        
+        </div>
+
+        <div></div>
+      </footer>
+    </>
   )
 }
 
